@@ -7,12 +7,7 @@ function init(){
 
     // MicroModal.init()
 
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 160,
-        gutter: 20,
-        fitWidth: true
-    });
+   
 
     $(".modal-close").click(function(e){
         $('.modal').addClass('hidden');
@@ -32,7 +27,14 @@ function init(){
         });
 
         resize(this);
-    })
+    });
+
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 160,
+        gutter: 20,
+        fitWidth: true
+    });
 }
 
 function setModal(img){
@@ -50,7 +52,7 @@ function setModal(img){
     $('.modal-wiki').attr("href",wikilink)
 }
 function resize(img){
-    newHeight = Math.floor(Math.random() * 40)+180;
+    newHeight = Math.floor(Math.random() * 80)+200;
     console.log(newHeight);
 
     $(img).css('height', newHeight+'px')
