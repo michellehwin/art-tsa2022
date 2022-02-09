@@ -13,7 +13,9 @@
     <h1 class="period-header">Masonry - gutter, margin bottom</h1>
     <!-- test commit -->
     <div class="grid">
-        <div class="painting grid-item" pTitle = "Test Painting Title" pArtist = "Ken Myers" pStyle = "Swag"></div>
+        <div class="painting grid-item" pTitle = "Test Painting Title" pArtist = "Ken Myers" pStyle = "Swag" pWikiLink ="https://en.wikipedia.org/wiki/Mona_Lisa">
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg">
+        </div>
         <div class="grid-item grid-item--width2 grid-item--height2"></div>
         <div class="grid-item grid-item--height3"></div>
         <div class="grid-item grid-item--height2"></div>
@@ -43,9 +45,12 @@
             <div class = "modal-container">
                 <button class = "modal-close">x</button>
                 <h1 class = "modal-title"></h1>
+                <img class = "modal-img">
                 <div class = "modal-content">
 
+                
                 </div>
+                <a class = "modal-wiki"><button>Read more on Wikipedia</button></a>
             </div>
         </div>
     </div>
