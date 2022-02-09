@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#welcomePage").load("welcome.html");
+            $("#exhibit1").load("exhibit1.html");''
+        });
+    </script>
     <link rel="stylesheet" href="main.css">
     <title>2022 Modern Art Exhibit</title>
 </head>
+
 <body>
-    <div class="landing">
-        <img src="gallery-landing-temp.jpg" alt="">
-        <div class="landing-text">
-            <h1>2022 Modern Art Exhibit</h1>
-            <a class="enter-button" href="welcome.html">Enter</a>
+    <div class="container">
+
+        <div class="full-screen-page tile">
+            <img src="gallery-landing-temp.jpg" alt="">
+            <div class="center-text">
+                <h1>2022 Modern Art Exhibit</h1>
+                <a class="enter-button" href="welcome.html">Enter</a>
+            </div>
         </div>
+        <div id="welcomePage" class="tile"></div>
+        <div id="exhibit1" class="tile"></div>
+
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="gsap.js"></script>
 </body>
+
 </html>
