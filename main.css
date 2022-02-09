@@ -48,8 +48,13 @@ a:hover, a:active .enter-button {
 
 /* ---- grid ---- */
 
+.period-header{
+  text-align: center;
+}
+
 .grid {
-  max-width: 1200px;
+  margin:auto;
+  /* max-width: 200px; */
   height: 100%;
 }
 
