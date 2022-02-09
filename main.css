@@ -92,6 +92,10 @@ a:hover, a:active .enter-button {
 
 /* modal stuff */
 
+.modal-close{
+  float:right;
+}
+
 
 .modal-overlay{
   background-color: rgba(0,0,0,0.5);  ;

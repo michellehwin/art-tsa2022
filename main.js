@@ -13,6 +13,10 @@ function init(){
         gutter: 20
     });
 
+    $(".modal-close").click(function(e){
+        $('.modal').addClass('hidden');
+    });
+
     $(".modal-container").click(function(e){
         e.stopPropagation();
     });
