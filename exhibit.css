@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@600&display=swap');
+
+#nav-bar{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(88,88,88,100), rgba(88,88,88,0));
+  /* margin: 0;
+  padding: 0; */
+}
+
+#main{
+  margin-top: 100px;
+}
+.period-header{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Source Code Pro', monospace; */
+  text-align: center;
+}
+
 /* ---- grid ---- */
 
-.period-header{
-    text-align: center;
-  }
+
   
   .grid {
     margin:auto;
