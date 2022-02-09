@@ -10,7 +10,7 @@ html {
 
 .container {
     overscroll-behavior: none;
-    width: 200%;
+    /* width: 300%; */
     display: flex;
     flex-wrap: nowrap;
 }
@@ -20,6 +20,7 @@ html {
     text-align: center;
     color: white;
     height: 100%;
+    width: 100vw;
 }
 .full-screen-page img {
     width: 100vw;
@@ -53,5 +54,3 @@ a:hover, a:active .enter-button {
   background-color: purple;
   color: white;
 } */
-
-* { box-sizing: border-box; }

@@ -11,7 +11,9 @@
 }
 
 #main{
-  margin-top: 100px;
+  padding-top: 100px;
+  height: 100vh !important;
+  display: block;
 }
 .period-header{
   color: white;
@@ -21,13 +23,11 @@
 }
 
 /* ---- grid ---- */
-
-
   
   .grid {
     margin:auto;
     /* max-width: 200px; */
-    height: 100%;
+    width: 100vw !important;
   }
   
   /* clearfix */
