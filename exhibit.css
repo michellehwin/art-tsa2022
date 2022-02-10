@@ -11,6 +11,19 @@
   padding: 0; */
 }
 
+#nav-arrows{
+  fill: white;
+  max-height: 100%;
+  width:80px;
+  float: right;
+  margin-right: 10px;
+}
+#nav-arrows>a{
+  margin-right: 25%;
+  float: right;
+  width: 20%;
+}
+
 #main{
   z-index: -1;
   padding-top: 100px;
@@ -29,7 +42,7 @@
   .grid {
     margin:auto;
     /* max-width: 200px; */
-    width: 100vw !important;
+    /* width: 100% !important; */
   }
   
   /* clearfix */
@@ -50,7 +63,7 @@
   .grid-item {
     height:200px;
     max-width: 500px;
-    float: left;
+    /* float: left; */
     /* vertical gutter */
     margin-bottom: 20px;
     /* background: #D26;
