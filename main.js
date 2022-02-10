@@ -1,4 +1,4 @@
-$(window).load(function () { $('#content').masonry(); });
+$(window).on('load',function () { $('#content').masonry(); });
 
 function init() {
 
