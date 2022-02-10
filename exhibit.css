@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@600&display=swap');
 
 #nav-bar{
+  z-index: 1;
   position: fixed;
   top: 0;
   left:0;
@@ -11,6 +12,7 @@
 }
 
 #main{
+  z-index: -1;
   padding-top: 100px;
   height: 100vh !important;
   display: block;
