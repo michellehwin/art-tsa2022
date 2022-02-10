@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
             $("#welcomePage").load("welcome.html");
@@ -14,10 +14,22 @@
             $("#modern").load("modern.html");
             $("#medieval").load("medieval.html");
             $("#ancient").load("ancient.html");
+            // $("#spaceGlobe").load("space-globe.html");
             $("#endcard").load("endcard.html");
         });
     </script>
-    <link rel="stylesheet" href="main.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #a3b18a;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+        }
+    
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+    	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <link rel="stylesheet" href="styles/main.css">
     <title>Through the Ages Art Exhibit</title>
 </head>
 
@@ -25,7 +37,7 @@
     <div class="container">
 
         <div class="full-screen-page tile landing">
-            <img src="blank-museum.jpg" alt="">
+            <img src="paintings/blank-museum.jpg" alt="">
             <div class="center-text">
                 <h1>THROUGH<br> THE <br>AGES</h1>
                 <p>Art Exhibit</p>
@@ -39,13 +51,13 @@
         <!-- <div id="modern" class="tile"></div> -->
 
         <!-- <iframe src="exhibit1.html" style="width: 100vw !important;" frameborder="0"></iframe> -->
-        <!-- <div id="modern3d1" class="tile"></div> -->
+        <!-- <div id="spaceGlobe" class="tile"></div> -->
         <div id="endcard" class="tile"></div>
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="gsap.js"></script>
+    <script src="js/gsap.js"></script>
 </body>
 
 </html>
