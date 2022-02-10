@@ -1,28 +1,25 @@
-$(document).ready(function(){
-    init();
-});
+$(window).load(function () { $('#content').masonry(); });
 
-
-function init(){
+function init() {
 
     // MicroModal.init()
 
-   
 
-    $(".modal-close").click(function(e){
+
+    $(".modal-close").click(function (e) {
         $('.modal').addClass('hidden');
     });
 
-    $(".modal-container").click(function(e){
+    $(".modal-container").click(function (e) {
         e.stopPropagation();
     });
 
-    $('.modal').click(function(){
+    $('.modal').click(function () {
         $('.modal').addClass('hidden');
     });
 
-    $('.painting').each(function(index){
-        $(this).click(function(){
+    $('.painting').each(function (index) {
+        $(this).click(function () {
             setModal(this);
         });
 
@@ -37,8 +34,8 @@ function init(){
     });
 }
 
-function setModal(img){
-    imgsrc = $(img).children('img').attr('src')
+function setModal(img) {
+    imgsrc = $(img).children('img').attr('src');
     title = $(img).attr("ptitle");
     artist = $(img).attr("partist");
     style = $(img).attr("pstyle");
@@ -46,14 +43,14 @@ function setModal(img){
     $('.modal-img').attr("src", imgsrc);
     $(".modal-title").text(title);
     $(".modal-content").html(
-        "Artist: "+artist+"<br>"+
-        "Style: "+style);
+        "Artist: " + artist + "<br>" +
+        "Style: " + style);
     $(".modal").removeClass("hidden");
-    $('.modal-wiki').attr("href",wikilink)
+    $('.modal-wiki').attr("href", wikilink);
 }
-function resize(img){
-    newHeight = Math.floor(Math.random() * 80)+200;
-    console.log(newHeight);
+function resize(img) {
+    newHeight = Math.floor(Math.random() * 80) + 200;
+    // console.log(newHeight);
 
-    $(img).css('height', newHeight+'px')
+    $(img).css('height', newHeight + 'px');
 }

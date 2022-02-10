@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap');
+
 * { box-sizing: border-box; }
 
 body,
 html {
     height: 100%;
+    width: 100vw;
     margin:0;
-    font-family: sans-serif;
-    overscroll-behavior: none;
+    /* font-family: sans-serif; */
+    /* overscroll-behavior: none; */
+    font-family: 'Arya', sans-serif;
+    font-size: 20px;
+}
+
+.tile {
+  min-height: 100vh;
+  /* this is not correct: */
+  max-height: 180vh;
 }
 
 .container {
-    overscroll-behavior: none;
+    /* overscroll-behavior: none; */
     /* width: 300%; */
     display: flex;
     flex-wrap: nowrap;
@@ -19,15 +30,13 @@ html {
     position: relative;
     text-align: center;
     color: white;
-    height: 100%;
+    height: 100vh;
     width: 100vw;
 }
 .full-screen-page img {
     width: 100vw;
     height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
 }
 .center-text {
     position: absolute;
@@ -36,8 +45,18 @@ html {
     transform: translate(-50%, -50%);
 }
 
-.enter-button {
-  font-size: 1.5rem;
+.landing h1{
+  color: black;
+  font-size: 10rem;
+  line-height: 1;
+  text-align: right;
+  margin: 0;
+}
+.landing p{
+  color: black;
+  font-size: 3rem;
+  line-height: .5;
+  text-align: right;
 }
 
 /* a:link, a:visited .enter-button {
@@ -54,3 +73,34 @@ a:hover, a:active .enter-button {
   background-color: purple;
   color: white;
 } */
+
+
+.meet-artists{
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  background-color: #a3b18a;
+}
+
+.meet-artists .right {
+  display: block;
+  flex-basis: 100%;
+  order: 2;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.meet-artists .right h1{
+  padding-top: 15%;
+}
+
+.meet-artists .left {
+  display: block;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.meet-artists .left img {
+  /* height: 55%; */
+  width: 30%;
+}

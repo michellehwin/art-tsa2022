@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@600&display=swap');
 
+
+body,
+html {
+    height: 100%;
+    margin:0;
+    /* font-family: sans-serif; */
+    /* overscroll-behavior: none; */
+}
 #nav-bar{
-  z-index: 1;
   position: fixed;
   top: 0;
   left:0;
@@ -11,29 +18,14 @@
   padding: 0; */
 }
 
-#nav-arrows{
-  fill: white;
-  max-height: 100%;
-  width:80px;
-  float: right;
-  margin-right: 10px;
-}
-#nav-arrows>a{
-  margin-right: 25%;
-  float: right;
-  width: 20%;
-}
-
 #main{
-  z-index: -1;
   padding-top: 100px;
-  height: 100vh !important;
+  height: 100vh;
   display: block;
 }
 .period-header{
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Source Code Pro', monospace; */
+  /* font-family: 'Montserrat', sans-serif; */
   text-align: center;
 }
 
@@ -42,7 +34,8 @@
   .grid {
     margin:auto;
     /* max-width: 200px; */
-    /* width: 100% !important; */
+    /* height: 100%; */
+    width: 100vw !important;
   }
   
   /* clearfix */
@@ -61,9 +54,9 @@
   }
   
   .grid-item {
-    height:200px;
+    height:30vh;
     max-width: 500px;
-    /* float: left; */
+    float: left;
     /* vertical gutter */
     margin-bottom: 20px;
     /* background: #D26;
