@@ -1,7 +1,7 @@
 console.log(`VW: ${window.innerWidth}`);
 console.log(`VH: ${window.innerHeight}`);
 
-$(window).on('load', function () { init(); });
+// $(window).on('load', function () { init(); });
 
 function init() {
 
