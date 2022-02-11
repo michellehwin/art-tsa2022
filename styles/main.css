@@ -16,6 +16,7 @@ html {
 
 .tile {
   min-height: 100vh;
+  width: 100vw;
   /* this is not correct: */
   max-height: fit-content;
 }
@@ -40,17 +41,25 @@ html {
 }
 .landing h1{
   color: black;
-  font-size: 10rem;
   line-height: 1;
   text-align: right;
   margin: 0;
 }
 .landing p{
   color: black;
-  font-size: 3rem;
   line-height: .5;
   text-align: right;
 }
+@media (min-width: 768px) { 
+.landing h1{
+  font-size: 10rem;
+}
+.landing p{
+  font-size: 3rem;
+}
+ }
+
+
 .center-text {
     position: absolute;
     top: 50%;
@@ -122,11 +131,14 @@ html {
   flex-basis: 100%;
   text-align: center;
 }
+.meet-artists .left img {
+  width: 45%;
+}
+@media (min-width: 768px) { 
 
 .meet-artists .left img {
-  /* height: 55%; */
   width: 30%;
-}
+}}
 
 .references {
   text-align: center;
