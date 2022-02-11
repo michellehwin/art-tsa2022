@@ -14,22 +14,10 @@
             $("#modern").load("modern.html");
             $("#medieval").load("medieval.html");
             $("#ancient").load("ancient.html");
-            // $("#spaceGlobe").load("space-globe.html");
-            $("#endcard").load("endcard.html");
             $.getScript("js/main.js");
         });
     </script>
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        #mc_embed_signup {
-            background: #a3b18a;
-            clear: left;
-            font: 14px Helvetica, Arial, sans-serif;
-        }
     
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-    	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
     <link rel="stylesheet" href="styles/main.css">
     <title>Through the Ages Art Exhibit</title>
 </head>
@@ -56,7 +44,16 @@
                 <a target="_blank" href="space-globe.html">Enter the Digital Age</a>
             </div>
         </div>
-        <div id="endcard" class="tile"></div>
+        <div id="endcard" class="tile">
+            <div class="full-screen-page">
+                <img src="paintings/sound-space.jpg" alt="">
+                <div class="center-text">
+                    <h1 style="margin: 10px;">Thanks for visiting</h1>
+                    <a href="more-info.html">More Info</a>
+                </div>
+            
+            </div>
+        </div>
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>

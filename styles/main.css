@@ -2,6 +2,10 @@
 
 * { box-sizing: border-box; }
 
+h1 {
+  margin: 0;
+}
+
 body,
 html {
     height: 100%;
@@ -34,13 +38,6 @@ html {
     height: 100vh;
     object-fit: cover;
 }
-.center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .landing h1{
   color: black;
   font-size: 10rem;
@@ -54,12 +51,58 @@ html {
   line-height: .5;
   text-align: right;
 }
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#endcard .more-info {
+  position: absolute;
+  bottom: 20px;
+    left: 50%;
+}
+
+
+#endcard a:link, #endcard a:visited, #endcard a:active {
+ background-color: #1b4332;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* mouse over link */
+#endcard a:hover {
+  background-color: #d8f3dc;
+  color: black;
+}
+
+.more-info{
+  background-color: #a3b18a;
+  min-height: 100vh;
+}
+
+.more-info>h1{
+  padding: 20px;
+  text-align: center;
+}
+
+.more-info>h1>a {
+ text-decoration: none;
+  color: black;
+}
+.more-info>h1>a:hover {
+ text-decoration: underline;
+  color: black;
+}
 
 .meet-artists{
   height: fit-content;
   padding: 20px;
   display: flex;
-  background-color: #a3b18a;
 }
 
 .meet-artists .right {
@@ -83,6 +126,12 @@ html {
 .meet-artists .left img {
   /* height: 55%; */
   width: 30%;
+}
+
+.references {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 40px;
 }
 
 /* unvisited link */
