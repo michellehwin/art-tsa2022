@@ -7,20 +7,16 @@ html {
     height: 100%;
     width: 100vw;
     margin:0;
-    /* font-family: sans-serif; */
-    /* overscroll-behavior: none; */
     font-family: 'Arya', sans-serif;
-    /* font-size: 20px; */
 }
 
 .tile {
   min-height: 100vh;
   /* this is not correct: */
-  max-height: 180vh;
+  max-height: fit-content;
 }
 
 .container {
-    /* overscroll-behavior: none; */
     /* width: 300%; */
     display: flex;
     flex-wrap: nowrap;
@@ -58,22 +54,6 @@ html {
   line-height: .5;
   text-align: right;
 }
-
-/* a:link, a:visited .enter-button {
-  background-color: white;
-  color: black;
-  border: 3px solid white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active .enter-button {
-  background-color: purple;
-  color: white;
-} */
-
 
 .meet-artists{
   height: fit-content;

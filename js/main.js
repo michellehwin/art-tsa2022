@@ -1,10 +1,11 @@
-$(window).on('load',function () { $('#content').masonry(); });
+console.log(`VW: ${window.innerWidth}`);
+console.log(`VH: ${window.innerHeight}`);
+
+$(window).on('load', function () { $('.grid').masonry(); });
 
 function init() {
 
     // MicroModal.init()
-
-
 
     $(".modal-close").click(function (e) {
         $('.modal').addClass('hidden');
