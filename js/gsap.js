@@ -5,7 +5,7 @@ let sections = gsap.utils.toArray(".tile");
 gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
     ease: "none",
-    duration: .1,
+    duration: .5,
     scrollTrigger: {
         trigger: ".container",
         pin: true,

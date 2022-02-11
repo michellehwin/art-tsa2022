@@ -49,9 +49,12 @@
         <div id="romance" class="tile"></div>
         <div id="renaissance" class="tile"></div>
         <div id="modern" class="tile"></div>
-
-        <!-- <iframe src="exhibit1.html" style="width: 100vw !important;" frameborder="0"></iframe> -->
-        <!-- <div id="spaceGlobe" class="tile"></div> -->
+        <div id="digital" class=" tile">
+            <div class="full-screen-page"></div>
+            <div class="center-text">
+                <a target="_blank" href="space-globe.html">Enter the Digital Age</a>
+            </div>
+        </div>
         <div id="endcard" class="tile"></div>
 
     </div>
@@ -60,6 +63,23 @@
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/gsap.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "#digital",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x6993b1,
+            size: 1.10,
+            backgroundColor: 0xffffff
+        })
+    </script>
 </body>
 
 </html>
