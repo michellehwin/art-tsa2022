@@ -5,8 +5,9 @@
   float: right;
   width: 120px;
   overflow: visible;
-  margin-left: -120px;
+  margin-left: -130px;
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .audiobutton:hover{
