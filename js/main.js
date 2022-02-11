@@ -1,7 +1,7 @@
 console.log(`VW: ${window.innerWidth}`);
 console.log(`VH: ${window.innerHeight}`);
 
-$(window).on('load', function () { $('.grid').masonry(); });
+$(window).on('load', function () { init(); });
 
 function init() {
 
@@ -27,12 +27,12 @@ function init() {
         resize(this);
     });
 
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        // columnWidth: 160,
-        gutter: 20,
-        fitWidth: true
-    });
+    // $('.grid').masonry({
+    //     itemSelector: '.grid-item',
+    //     // columnWidth: 160,
+    //     gutter: 20,
+    //     fitWidth: true
+    // });
 }
 
 function setModal(img) {
