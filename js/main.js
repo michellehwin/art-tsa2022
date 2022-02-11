@@ -1,6 +1,8 @@
 console.log(`VW: ${window.innerWidth}`);
 console.log(`VH: ${window.innerHeight}`);
 
+sounds = []
+
 $(window).on('load', function () { initSounds(); });
 
 function init() {
@@ -58,16 +60,15 @@ function resize(img) {
 
 
 function initSounds(){
-    $(".audiobutton").each(function(){
-        setSound(this);
+    $(".audiobutton").each(function(index){
+        setSound(this, index);
     });
 }
 
-function setSound(t){
+function setSound(t, i){
+    sounds[i] = new Audio($(t).attr("soundfile"))
     $(t).click(function(){
-        var sf = $(t).attr("soundfile");
-        var snd = new Audio(sf);
-        snd.play();
+        sounds[i].play();
         console.log('playing');
     })
 }
