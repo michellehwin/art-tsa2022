@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@600&display=swap');
 
 
+.audiobutton{
+  float: right;
+  width: 120px;
+  overflow: visible;
+  margin-left: -120px;
+  font-size: 20px;
+}
+
+.audiobutton:hover{
+  text-decoration: underline;
+}
+
+
 body,
 html {
     height: 100%;
