@@ -64,9 +64,9 @@ function initSounds(){
 }
 
 function setSound(t){
-    sf = $(t).attr("soundfile");
-    snd = new Audio(sf);
     $(t).click(function(){
+        var sf = $(t).attr("soundfile");
+        var snd = new Audio(sf);
         snd.play();
         console.log('playing');
     })
