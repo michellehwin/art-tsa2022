@@ -61,7 +61,6 @@ html {
   padding-bottom: 10%;
   height: 80vh;
   width: 100vw !important;
-  overflow: clip;
 }
 
 /* clearfix */
