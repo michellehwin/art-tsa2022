@@ -33,6 +33,7 @@ html {
   height: 100vh;
   width: 100vw;
   background-size: cover;
+  background-position: center bottom;
 }
 
 .ancient {
@@ -55,7 +56,7 @@ html {
 }
 @media (min-width: 768px) {
   #main {
-    padding-top: 100px;
+    padding-top: 70px;
   }
 }
 .period-header {
@@ -66,15 +67,22 @@ html {
 /* ---- grid ---- */
 
 .grid {
-  /* display: grid;
-    grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 1fr;
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto); */
+  grid-auto-rows: minmax(100px, auto);
   margin: auto;
-  padding: 5%;
-  padding-bottom: 10%;
-  height: 80vh;
-  width: 100vw !important;
+  height: 70vh;
+  /* width: 100vw !important; */
+  align-items: center;
+  align-content: center;
+}
+@media (min-width: 1080px) {
+
+.grid {
+  grid-template-columns: 1fr 2fr 1.5fr 1fr 2fr 1fr;
+  padding: 0 20px;
+}
 }
 
 /* clearfix */
@@ -88,22 +96,26 @@ html {
 
 .painting > img {
   object-fit: scale-down;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   height: 100%;
+  vertical-align: middle;
+  
 }
 .grid-item {
-  height: 20vh;
-  max-width: 500px;
-  float: left;
-  /* vertical gutter */
-  margin-bottom: 20px;
+  padding: 10px;
+  min-width: 0;
+  height: 100%;
+  min-height: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .grid-item {
-    height: 33vh;
-    max-width: 500px;
-    float: left;
+    /* height: 33vh; */
+    /* max-width: 500px; */
     /* vertical gutter */
   }
 }
