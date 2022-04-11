@@ -59,6 +59,12 @@ html {
     padding-top: 70px;
   }
 }
+
+@media (max-width: 468px) {
+.period-header {
+  padding-top: 10px;}
+}
+
 .period-header {
   color: white;
   text-align: center;
@@ -68,7 +74,7 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   margin: auto;
@@ -77,12 +83,18 @@ html {
   align-items: center;
   align-content: center;
 }
-@media (min-width: 1080px) {
 
-.grid {
-  grid-template-columns: 1fr 2fr 1.5fr 1fr 2fr 1fr;
-  padding: 0 20px;
+@media (min-width: 1080px) {
+  .grid {
+    grid-template-columns: 1fr 2fr 1.5fr 1fr;
+    padding: 0 20px;
+  }
 }
+@media (min-width: 1080px) {
+  .grid {
+    grid-template-columns: 1fr 2fr 1.5fr 1fr 2fr 1fr;
+    padding: 0 20px;
+  }
 }
 
 /* clearfix */
