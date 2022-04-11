@@ -37,14 +37,12 @@ function setModal(img) {
     title = $(img).attr("ptitle");
     artist = $(img).attr("partist");
     style = $(img).attr("pstyle");
-    wikilink = $(img).attr("pwikilink");
     $('.modal-img').attr("src", imgsrc);
     $(".modal-title").text(title);
     $(".modal-content").html(
         "Artist: " + artist + "<br>" +
         "Style: " + style);
     $(".modal").removeClass("hidden");
-    $('.modal-wiki').attr("href", wikilink);
 }
 function resize(img) {
     newHeight = Math.floor(Math.random() * 80) + 200;
