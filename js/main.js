@@ -3,7 +3,7 @@ console.log(`VH: ${window.innerHeight}`);
 
 sounds = []
 
-$(window).on('load', function () { initSounds(); });
+$(window).on('load', function () { init(); initSounds(); });
 
 function init() {
 
