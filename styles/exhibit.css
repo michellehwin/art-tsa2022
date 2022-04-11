@@ -151,13 +151,16 @@ html {
 }
 
 .modal-container {
+
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   max-width: 80%;
   max-height: 90%;
 
-  border-radius: 5px;
+  /* border-radius: 5px; */
   text-align: center;
 
-  background-color: white;
+  background-color: rgba(177, 177, 177, 0.795);
 
   margin: 0;
   padding: 0;
@@ -175,4 +178,9 @@ html {
   margin-left: 30px;
   margin-right: 30px;
   padding: 0;
+}
+
+.modal-close{
+  background: none;
+  border: none;
 }
